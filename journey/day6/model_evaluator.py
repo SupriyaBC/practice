@@ -19,7 +19,7 @@ def is_eligible(model):
         errors.append("accuracy must be at least 0.90")
 
     if model["latency"] < 0 or model["latency"] > 200:
-        errors.append("latency must be between 0 and 200")
+        errors.append("latency must be between 0  to 200")
 
     return errors
 
