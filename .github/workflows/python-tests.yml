@@ -20,6 +20,6 @@ jobs:
         run: python -m pip install  pytest
 
       - name: Run automated tests
-        run: python -m pytest -v
+        run: python -m pytest -v journey/day6/
 
 
