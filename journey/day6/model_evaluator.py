@@ -148,7 +148,7 @@ def is_eligible(model):
         or not isinstance(accuracy, (int, float))
         or not 0 <= accuracy <= 1
     ):
-        errors.append("accuracy must be between 0 and 1")
+        errors.append("accuracy must be greater than 0 and at most 1")
     else:
         if (
             EVALUATION_CONFIG["accuracy_must_be_greater_than_zero"]
@@ -160,7 +160,7 @@ def is_eligible(model):
                 f"accuracy must be at least "
                 f'{EVALUATION_CONFIG["minimum_accuracy"]}'
             )
-
+ 
     if (
         isinstance(latency, bool)
         or not isinstance(latency, (int, float))
