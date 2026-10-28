@@ -1,0 +1,11 @@
+{
+    "evaluation" :{
+        "minimum_accuracy":0.90,
+        "minimum_latency": 0,
+        "maximum_latency": 200,
+        "accuracy_must_be_greater_than_zero": true
+    },
+    "release": {
+    "selection_metric": "accuracy"
+  }
+}
